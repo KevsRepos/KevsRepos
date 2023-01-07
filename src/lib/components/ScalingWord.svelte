@@ -4,11 +4,10 @@ import { scale } from 'svelte/transition';
 
 export let delay = 800, word, scalerOff;
 
-scalerOff = false;
-
 let show = true;
 
 onMount(() => {
+    scalerOff = false;
     setTimeout(() => {
         show = false;
 
